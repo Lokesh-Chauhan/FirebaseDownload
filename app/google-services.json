@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "333060098685",
+    "firebase_url": "https://fir-download-1fac4.firebaseio.com",
+    "project_id": "fir-download-1fac4",
+    "storage_bucket": "fir-download-1fac4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333060098685:android:6b29967fcc18e8bc3b3f14",
+        "android_client_info": {
+          "package_name": "com.example.firebasedownload"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333060098685-oi276mnv0mm431f2odas73bvpl9483g3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBi9wMVuDiSWVVS0jb2KJtdYaYYfP7bVrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333060098685-oi276mnv0mm431f2odas73bvpl9483g3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
