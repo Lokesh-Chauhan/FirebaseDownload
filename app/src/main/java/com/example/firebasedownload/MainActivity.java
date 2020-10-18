@@ -28,7 +28,6 @@ import java.io.File;
 import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
-    private StorageReference mStorageRef;
     private ImageView imageView;
     private Button btnDownload;
     @Override
@@ -39,15 +38,10 @@ public class MainActivity extends AppCompatActivity {
         imageView = findViewById(R.id.imageView);
         btnDownload = findViewById(R.id.download);
 
-        mStorageRef = FirebaseStorage.getInstance().getReference();
-
-        btnDownload.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String url = "https://firebasestorage.googleapis.com/v0/b/fir-download-1fac4.appspot.com/o/edited.jpg?alt=media&token=256ebbb2-6e3a-40ad-bdd3-199fc8cc8452";
-                downloadFile(MainActivity.this,"1",".img","My Folder",url);
-                Picasso.get().load(url).resize(1024,1024).into(imageView);
-            }
+        btnDownload.setOnClickListener(v -> {
+            String url = "https://firebasestorage.googleapis.com/v0/b/fir-download-1fac4.appspot.com/o/edited.jpg?alt=media&token=256ebbb2-6e3a-40ad-bdd3-199fc8cc8452";
+            downloadFile(MainActivity.this,"1",".img","My Folder",url);
+            Picasso.get().load(url).resize(1024,1024).into(imageView);
         });
 
     }
